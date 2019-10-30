@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+           ul {
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+               overflow: hidden;
+               background-color: darkorange;
+               font-family: 'Josefin Sans', sans-serif;
+            }
+            
+            li {
+                float: left;
+            }
+            
+            li a {
+                display: block;
+                color: azure;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            
+            li a:hover {
+                background-color: grey;
+            }
+            
+            .utama{
+                height: 100%;
+                width: 100%;
+            }
+            
+            .logiKiri{
+                float: left;
+                height: 100%;
+                width: 50%;
+            }
+            .logo{
+                position: absolute;
+                width: 45%;
+                top: 20%;
+                left: 15%;
+                animation: slide-in-bck-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            @keyframes slide-in-bck-left {
+  0% {
+    -webkit-transform: translateZ(700px) translateX(-400px);
+            transform: translateZ(700px) translateX(-400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+            transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+            
+            .logoKiri h1{
+                color: azure;
+                font-family: 'Staatliches', cursive;
+                font-size: 45px;
+                position: absolute;
+                top: 65%;
+                left: 20%;
+                animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            }
+            .logoKiri p{
+                color: azure;
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                position: absolute;
+                top: 72%;
+                left: 20%;
+                animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            }
+            @keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+            
+            .gambarKanan{
+                float: right;
+                height: 100%;
+                width: 50%;
+            }
+            .hero1{
+                position: absolute;
+                z-index: 3;
+                margin-left: 25%;
+                margin-top: 30%;
+                height: 600px;
+                animation: slide-in-blurred-bottom 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1S both;
+            }
+            .hero2{
+                margin-top: 31%;
+                margin-left: 1%;
+                height: 600px;
+                position: absolute;
+                z-index: 1;
+                animation: slide-in-blurred-bottom 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1.1S both;
+            }
+            .hero3{
+                margin-top: 30%;
+                margin-left: 33%;
+                height: 600px;
+                position: absolute;
+                z-index: 2;
+                animation: slide-in-blurred-bottom 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1.5S both;
+            }
+            @keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+            
+            .menu{
+                position: absolute;
+                margin-top: 10%;
+                height: 15%;
+                width: 100%;
+                background-color: darkorange;
+            }
+            .menu p{
+                color: azure;
+                font-size: 40px;
+                font-family: 'Staatliches', cursive;
+            }
+            
+            .content{
+                height: 100%;
+                width: 100%;
+            }
+
+            .button {
+                font-family: 'Staatliches', cursive;
+                font-size: 60px;
+                margin-top: 30%;
+                color: #494949;
+                text-transform: uppercase;
+                text-decoration: none;
+                background: rgba(255,255,255,.5);
+                padding: 20px;
+                border: 4px solid #494949 !important;
+                display: inline-block;
+                transition: all 0.4s ease 0s;
+                border-radius: 25px;
+                 animation: heartbeat 1.5s ease-in-out infinite both;
+            }
+            @keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+            .button:hover {
+                color: #ffffff;
+                background: darkorange;
+                border-color: #f6b93b;
+                transition: all 0.4s ease 0s;
+            }
+        </style>
+    </head>
+    <body background="bg.jpg">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#play">Play</a></li>
+        </ul>
+        <div class="utama" id="home">
+            <div class="gambarKanan">
+                <img class="hero1" src="full-portrait.png">
+                <img class="hero3" src="full-portrait%20(2).png">
+            </div>
+            <div class="logoKiri">
+                <img class="logo" src="overwatch-logo.png">
+                <h1>THE WORLD NEEDS HEROES</h1>
+                <p>Slow down time, rain destruction from above in a jet-powered armor suit, or pilot a superpowered hamster ball.</p>
+                <img class="hero2" src="full-portrait%20(1).png">
+            </div>
+        </div>
+        <div class="menu" id="info" align="center">
+            <p>BEGIN YOUR WATCH</p>
+        </div>
+        <div class="content" id="play">
+            <div class="button_cont" align="center"><a class="button" href="https://playoverwatch.com/en-us/">PLAY NOW!</a></div>
+        </div>
+        
+    </body>
+</html>
